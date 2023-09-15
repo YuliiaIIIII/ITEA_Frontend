@@ -3,52 +3,25 @@
 }
 body{
     background-color: #FFFFFF;
-    /* font-family: 'DM Sans'; */
     font-family: 'Poppins';
-}
-header,
-.main_container{
-    width: 75%;
-    margin: 0 auto;
+    margin: 0;
 }
 header{
-    margin-top: 78px;
-    margin-bottom: 246px;
+    width: 100%;
+    padding: 78px auto 246px;
 }
-.nav_container{
-    display: flex;
-    justify-content: space-between;
+h2,
+p{
+    margin: 0;
 }
-.navigation{
-    display: flex;
-}
-
-
-
-.hello_section{
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 356px;
-}
-.developer_name{
-    color: var(--Solid-Heading, #42446E);
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-    font-size: 58px;
+p{
+    color: #666;
+    font-size: 18px;
     font-style: normal;
-    font-weight: 700;
-    line-height: 70px;
-    letter-spacing: -1px;
+    font-weight: 400;
+    line-height: 26px;
 }
-.gradient_name{
-    background: var(--Gradient-Heading, linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-
-/* .links{
+.links{
     display: flex;
     justify-content: space-between;
     width: 50%;
@@ -63,32 +36,131 @@ a{
     font-weight: 500;
     line-height: 26px;
     text-decoration: none;
-} */
-
-
-
-
-
-
-/* .social_contacts{
+}
+.nav_container,
+.main_container{
+    width: 75%;
+    margin: 0 auto;
+}
+.nav_container{
     display: flex;
     justify-content: space-between;
 }
-
-
-.container{
-    width: 1218px;
-    margin: 0 auto;
-} */
-/* h2{
-    font-size: 48px;
-    color: #42446E;
-
+.navigation{
+    display: flex;
 }
 .hello_section{
     display: flex;
     justify-content: space-between;
-    font-size: 58px;
-    font-weight: 800;
+    align-items: center;
+    margin-bottom: 291px;
+}
+.developer_name p {
     color: #42446E;
-} */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: -1px;
+}
+.gradient_name{
+    background: var(--Gradient-Heading, linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.about_me{
+    width: 45%;
+}
+.title{
+    color: #42446E;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: -0.4px;
+}
+.title h2{
+    margin-top: 38px;
+    margin-bottom: 38px;
+}
+.job_section{
+    border-bottom: 2px solid #EBEAED;
+}
+.job_description{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 26px;
+    margin-top: 30px;
+}
+.job_marker{
+    padding: 1px 21px;
+    border-radius: 100px;
+    background-color:  #D7FFE0;
+}
+
+footer .nav-img a {
+    padding-left: 20px;
+    text-decoration: none;
+    fill: #666666;
+}
+.footer_contacts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(102, 102, 102, 0.3);
+    padding-bottom: 19px;
+    padding-top: 30px;
+    margin-bottom: 50px;
+    margin-right: 20px;
+}
+footer .contacts a {
+    color: #42446E;
+    font-family: 'DM Sans';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; 
+    text-decoration: none;
+    padding-right: 50px;
+}
+
+.footer_navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+footer .nav-text a {
+    color: #42446E;
+    text-align: center;
+    font-family: 'DM Sans';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    padding-right: 50px;  
+}
+
+footer .copywrite {
+    color: #666;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+footer .copywrite span {
+    background: var(--Gradient-Heading, linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%));
+    background-clip: text;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
