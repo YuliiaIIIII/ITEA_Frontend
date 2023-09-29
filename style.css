@@ -62,7 +62,7 @@ a:hover{
 }
 
 .hello_section{
-  margin: 0 auto 291px;
+  margin: 0 auto 220px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -77,35 +77,44 @@ a:hover{
   letter-spacing: -1px;
 }
 .gradient_name{
-  background: var(--Gradient-Heading, linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%));
+  background: linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.developer_photo{
+  max-width: 349px;
+  max-height: 349px;
+  overflow: hidden;
+  border-radius: 50%;
+  border-width: 6px;
+  border-style: solid;
+  border-color: #E70FAA;
+  /* border-color: linear-gradient(180deg, rgba(231,15,170,1) 0%, rgba(0,192,253,1) 99%); */
+}
 .developer_photo img{
   width: 349px;
-  height: 349px;
 }
-
 .about_me{
-  width: 45%;
-  margin-left: 205px;
+  width: 75%;
+  margin: 0 auto;
 }
-.title{
-  color: #42446E;
+.block_width{
+  width: 60%;
+}
+.title h2{
+  margin: 38px 0;
   font-size: 42px;
-  font-style: normal;
+  color: #42446E;
   font-weight: 700;
   line-height: 52px;
   letter-spacing: -0.4px;
 }
-.title h2{
-  margin-bottom: 38px;
-}
-.title p{
-  font-size: 18px;
+.title{
   line-height: 26px;
-  margin-bottom: 38px;
+}
+.title_description{
+  font-size: 18px;
 }
 .job_section{
   border-bottom: 2px solid #EBEAED;
@@ -122,6 +131,7 @@ a:hover{
   letter-spacing: 1px;
 }
 .job_marker p{
+  min-width: 92px;
   padding: 1px 22px;
   border-radius: 100px;
   background-color:  #D7FFE0;
@@ -176,9 +186,9 @@ a:hover{
   left: 0;
   top: 6px;
 }
-.internship{
+/* .internship{
   padding: 1 18px;
-}
+} */
 .company_location{
   position: relative;
 }
@@ -211,11 +221,58 @@ a:hover{
   left: 0px;
   top: 3px;
 }
-.education{
-  margin-top: 38px;
-}
 .job_title{
   padding-right: 0;
+}
+.techStack{
+  width: 75%;
+  margin: 0 auto;
+}
+.techDescription{
+  font-size: 20px;
+  margin-bottom: 198px;
+}
+.technologies_block{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 66px;
+}
+.projects{
+  width: 75%;
+  margin: 0 auto;
+}
+.projects p{
+  font-size: 20px;
+  margin-bottom: 110px;
+}
+.projectWrapper{
+  display: flex;
+}
+
+
+
+
+
+
+
+.email{
+  margin: 200px auto;
+}
+.email p{
+  color: #1E0E62;
+  text-align: center;
+  font-family: 'DM Sans';
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: -1px;
+}
+.email p span{
+  background: linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 footer{
   margin: 199px auto 0;
@@ -224,6 +281,11 @@ footer{
 .footer_contacts{
   margin: 0 auto;
   display: flex;
+}
+.links div p,
+.nav_footer a{
+  color: #42446E;
+  font-size: 18px;
 }
 .top_footer{
   margin-bottom: 55px;
@@ -239,7 +301,15 @@ footer{
   display: flex;
   justify-content: space-between;
 }
+.bottom_nav p{
+  font-size: 18px;
+}
 
+
+
+
+
+/* ///////////////////////// */
 @media screen and (max-width: 992px){
   header,
   .hello_section,
@@ -383,6 +453,7 @@ footer{
   .title p{
     font-size: 16px;
     margin-bottom: 18px;
+    text-align: justify;
   }
   .job_title{
     font-size: 18px;
@@ -430,7 +501,7 @@ footer{
     margin-bottom: 80px;
   }
   .logo_img{
-    width: 30%;
+    align-self: center;
   }
   .nav_menu{
     width: 100%;
