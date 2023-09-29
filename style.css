@@ -93,7 +93,6 @@ a:hover{
   color: #42446E;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-size: 58px;
-  font-style: normal;
   font-weight: 700;
   line-height: 70px;
   letter-spacing: -1px;
@@ -189,8 +188,6 @@ div .gradient_background{
 .company_name{
   position: relative;
   padding-left: 20px;
-  position: relative;
-  padding-left: 20px;
   padding-right: 80px;
 }
 .duration p{
@@ -209,7 +206,6 @@ div .gradient_background{
   left: 0;
   top: 6px;
 }
-
 .company_location{
   position: relative;
 }
@@ -267,9 +263,6 @@ div .gradient_background{
   font-size: 20px;
   margin-bottom: 96px;
 }
-/* //////////////////////////// */
-
-
 .all_portfolio{
   display: grid;
   grid-template-columns: repeat(3, 375px);
@@ -285,13 +278,6 @@ div .gradient_background{
 .portfolio_image{
   border-radius: 20px 20px 0px 0px;
 }
-
-
-
-
-
-
-
 h3{
   color: #000;
   text-align: center;
@@ -328,10 +314,9 @@ div .tech_style{
   color: #000;
   font-size: 16px;
   font-weight: 400;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
   text-decoration-line: underline;
 }
-
 li{
   list-style-type: none;
 }
@@ -363,7 +348,6 @@ li{
   left: -30px;
   top: 3px;
 }
-
 .email{
   margin: 200px auto;
 }
@@ -407,11 +391,10 @@ footer{
   font-size: 18px;
 }
 
-
-
-
-
 /* ///////////////////////// */
+@media screen and (max-width: 1200px){
+
+}
 @media screen and (max-width: 992px){
   header,
   .hello_section,
@@ -681,3 +664,18 @@ footer{
     flex-direction: column;
   }
 }
+
+/* @media screen and (max-width: 1200px){
+
+}
+@media screen and (max-width: 992px){
+
+} 
+
+@media screen and (max-width: 768px){
+
+}
+
+@media screen and (max-width: 480px){
+
+} */
