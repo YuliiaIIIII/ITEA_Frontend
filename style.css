@@ -7,7 +7,10 @@ body{
   margin: 0 auto;
 }
 p,
-h2{
+h2,
+h3,
+ul,
+li{
   margin: 0;
 }
 p{
@@ -18,11 +21,28 @@ p{
 header,
 .hello_section,
 .footer_wrapper{
-  width: 75%;
+  width: 80%;
 }
 header{
+  width: 100%;
+  height: 65px;
   display: flex;
-  margin: 41px auto 220px;
+  margin: 0 auto;
+  padding: 41px 0;
+  position: fixed;
+  align-items: center;
+  background-color: #FFF;
+  box-shadow: 0px 4px 6px rgb(177 174 174 / 25%);
+  top: 0;
+  z-index: 10;
+}
+.wrapper{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFFFF;
+  margin: 0 auto;
 }
 .logo_img{
   width: 30%;
@@ -60,7 +80,9 @@ a:hover{
   color: rgb(0, 132, 255);
   font-size: 22px;
 }
-
+.main_container{
+  margin-top: 320px;
+}
 .hello_section{
   margin: 0 auto 220px;
   display: flex;
@@ -82,21 +104,22 @@ a:hover{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.developer_photo{
-  max-width: 349px;
-  max-height: 349px;
-  overflow: hidden;
+div .gradient_background{
+  width: 349px;
+  height: 349px;
+  background: linear-gradient(1deg, #13B0F5 -2.06%, #E70FAA 100%);
   border-radius: 50%;
-  border-width: 6px;
-  border-style: solid;
-  border-color: #E70FAA;
-  /* border-color: linear-gradient(180deg, rgba(231,15,170,1) 0%, rgba(0,192,253,1) 99%); */
 }
 .developer_photo img{
-  width: 349px;
+  width: 333px;
+  height: 333px;
+  border-radius: 50%;
+  position: relative;
+  top: 8px;
+  left: 8px;
 }
 .about_me{
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
 }
 .block_width{
@@ -186,9 +209,7 @@ a:hover{
   left: 0;
   top: 6px;
 }
-/* .internship{
-  padding: 1 18px;
-} */
+
 .company_location{
   position: relative;
 }
@@ -225,12 +246,12 @@ a:hover{
   padding-right: 0;
 }
 .techStack{
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
 }
 .techDescription{
   font-size: 20px;
-  margin-bottom: 198px;
+  margin-bottom: 140px;
 }
 .technologies_block{
   display: flex;
@@ -239,22 +260,109 @@ a:hover{
   margin-bottom: 66px;
 }
 .projects{
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
 }
-.projects p{
+.projects > div > p{
   font-size: 20px;
-  margin-bottom: 110px;
+  margin-bottom: 96px;
 }
-.projectWrapper{
+/* //////////////////////////// */
+
+
+.all_portfolio{
+  display: grid;
+  grid-template-columns: repeat(3, 375px);
+  grid-template-rows: repeat(2, 575px);
+  gap: 62px 45px;
+  justify-content: space-between;
+}
+.card_content{
+  border-radius: 20px;
+  background: #FFF;
+  box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.20);
+}
+.portfolio_image{
+  border-radius: 20px 20px 0px 0px;
+}
+
+
+
+
+
+
+
+h3{
+  color: #000;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 26px;
+  padding: 17px 35px;
+}
+.portfolio_description p{
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 26px;
+  padding: 10px 30px;
+  text-align: left;
+}
+div .tech_style{
+  color: #42446E;
+  line-height: 26px;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.tech_style span{
+  font-size: 14px;
+  font-weight: 300;
+}
+.list_links{
+  padding: 20px;
+}
+.list_links ul{
   display: flex;
+  justify-content: space-between;
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  text-decoration-line: underline;
 }
 
-
-
-
-
-
+li{
+  list-style-type: none;
+}
+.chain,
+.git_chain{
+  position: relative;
+}
+.chain::before{
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url('./images/link_chain.svg');
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  left: -30px;
+  top: 3px;
+}
+.git_chain::before{
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url('./images/icons_github_fill.svg');
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  left: -30px;
+  top: 3px;
+}
 
 .email{
   margin: 200px auto;
@@ -268,15 +376,9 @@ a:hover{
   line-height: 70px;
   letter-spacing: -1px;
 }
-.email p span{
-  background: linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 footer{
   margin: 199px auto 0;
-  width: 75%;
+  width: 80%;
 }
 .footer_contacts{
   margin: 0 auto;
