@@ -400,7 +400,6 @@ footer{
 @media screen and (max-width: 1199px){
   header{
     padding: 20px 0;
-    position: fixed;
   }
   .main_container {
     margin-top: 200px;
@@ -473,7 +472,6 @@ footer{
 @media screen and (max-width: 991px){
   header{
     padding: 20px 0;
-    position: fixed;
   }
   .main_container {
     margin-top: 220px;
