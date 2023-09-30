@@ -25,11 +25,9 @@ header,
 }
 header{
   width: 100%;
-  height: 65px;
   display: flex;
   margin: 0 auto;
   padding: 41px 0;
-  position: fixed;
   align-items: center;
   background-color: #FFF;
   box-shadow: 0px 4px 6px rgb(177 174 174 / 25%);
@@ -43,9 +41,6 @@ header{
   align-items: center;
   background-color: #FFFFFF;
   margin: 0 auto;
-}
-.logo_img{
-  width: 30%;
 }
 .nav_menu{
   width: 70%;
@@ -393,276 +388,370 @@ footer{
   font-size: 18px;
 }
 
-/* ///////////////////////// */
-@media screen and (max-width: 1200px){
-
-}
-@media screen and (max-width: 992px){
-  header,
-  .hello_section,
-  .footer_wrapper{
-      width: 90%;
-  }
+@media screen and (min-width: 1200px){
   header{
-    margin-bottom: 40px;
+    position: fixed;
+    height: 65px;
   }
-  .nav_menu{
-    flex-direction: column;
+  .logo_img{
+    width: 30%;
   }
-  .links,
-  .social_links{
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    width: 82%;
-    padding: 8px 0;
-    align-items: center;
+}
+@media screen and (max-width: 1199px){
+  header{
+    padding: 20px 0;
+    position: fixed;
   }
-  .links{
-    width: 100%;
-    justify-content: space-between;
+  .main_container {
+    margin-top: 200px;
   }
-  .social_links{
-    width: 100%;
-  }
-  .hello_section{
-    margin: 0 auto 30px;
-    justify-content: space-around;
-  }
-  .developer_name p {
-    font-size: 42px;
+  .developer_name p{
+    font-size: 52px;
     line-height: 60px;
   }
+  .developer_photo{
+    margin-top: 0;
+  }
+  div .gradient_background{
+    width: 240px;
+    height: 240px;
+  }
   .developer_photo img{
-    margin-top: 20px;
+    width: 228px;
+    height: 228px;
+    top: 6px;
+    left: 6px;
+  }
+  .hello_section{
+    margin-bottom: 150px;
+  }
+  .block_width{
+    width: 100%;
+    text-align: justify;
+  }
+  .techDescription{
+    margin-bottom: 70px;
+  }
+  .project_card{
     width: 280px;
-    height: 280px;
   }
-  .about_me{
-    width: 90%;
-    margin-left: 25px;
-    text-align: center;
+  .project_img img{
+    width: 280px;
   }
-  .title{
-    font-size: 26px;
+  h3{
+    font-size: 24px;
+    padding: 12px 14px;
   }
-  .title h2{
-    margin-bottom: 22px;
+  .portfolio_description p{
+    font-size: 16px;
+    text-align: justify;
   }
-  .title p{
-    font-size: 18px;
-    margin-bottom: 18px;
+  .list_links{
+    padding: 10px;
   }
-  .job_title{
-    font-size: 18px;
-    line-height: 22px;
+  li a{
+      font-size: 16px;
+      font-weight: 500;
   }
-  .job_details,
-  .details{
-    align-items: flex-start;
-    flex-direction: column;
-  }
-  .education{
-    margin-top: 28px;
+  .email{
+    margin: 100px auto;
   }
   footer{
-    margin-top: 30px;
-    width: 80%;
-  }
-  .top_footer {
-    margin-bottom: 25px;
+    margin: 100px auto 0;
+    width: 90%;
   }
   .bottom_footer{
-    width: 100%;
-    padding: 30px 0;
     flex-direction: column;
     align-items: center;
-    align-content: space-between;
+    row-gap: 50px;
   }
-  .nav_footer{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 20px;
+  .footer_contacts{
+    justify-content: center;
   }
 } 
 
-@media screen and (max-width: 768px){
-  header,
-  .hello_section,
-  .footer_wrapper{
-      width: 90%;
-  }
+@media screen and (max-width: 991px){
   header{
-    margin-bottom: 60px;
+    padding: 20px 0;
+    position: fixed;
   }
-  .nav_menu{
-    flex-direction: column;
+  .main_container {
+    margin-top: 220px;
   }
-  .links,
-  .social_links{
-    display: flex;
-    justify-content:space-around;
-    flex-wrap: wrap;
-    width: 82%;
-    padding: 8px 0;
-    align-items: center;
-  }
-  .links{
-    width: 100%;
-  }
-  .social_links{
-    width: 100%;
-  }
-  .hello_section{
-    margin: 0 auto 30px;
-    flex-direction: column;
-  }
-  .developer_name p {
-    font-size: 38px;
+  .developer_name p{
+    font-size: 48px;
     line-height: 60px;
   }
+  .developer_photo{
+    margin-top: 0;
+  }
+  div .gradient_background{
+    width: 240px;
+    height: 240px;
+  }
   .developer_photo img{
-    margin-top: 20px;
-    width: 249px;
-    height: 249px;
+    width: 228px;
+    height: 228px;
+    top: 6px;
+    left: 6px;
   }
-  .about_me{
+  .hello_section{
+    margin-bottom: 150px;
+  }
+  .block_width{
+    width: 100%;
+    text-align: justify;
+  }
+  .techDescription{
+    margin-bottom: 70px;
+  }
+  .projects > div > p {
+    margin-bottom: 70px;
+  }
+  .email{
+    margin: 100px auto;
+  }
+  footer{
+    margin: 100px auto 0;
     width: 90%;
-    margin-left: 25px;
   }
-  .title{
-    font-size: 26px;
+  .bottom_footer{
+    flex-direction: column;
+    align-items: center
+  }
+  .footer_contacts{
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .wrapper,
+  .links,
+  .nav_menu,
+  .hello_section{
+    flex-direction: column;
+  }
+  .nav_menu{
+    align-items: center;
+  }
+  .hello_section{
+    margin-bottom: 50px;
+  }
+  .main_container{
+    margin-top: 80px;
+  }
+  .developer_name p{
+    font-size: 42px;
+    line-height: 50px;
+    text-align: justify;
+  }
+  .developer_photo{
+    margin-top: 50px;
+  }
+  div .gradient_background{
+    width: 290px;
+    height: 290px;
+  }
+  .developer_photo img{
+    width: 272px;
+    height: 272px;
+    top: 9px;
+    left: 9px;
+  }
+  .block_width{
+    width: 100%;
   }
   .title h2{
-    margin-bottom: 18px;
+    margin: 40px 0;
+    font-size: 38px;
+    line-height: 44px;
   }
-  .title p{
-    font-size: 16px;
-    margin-bottom: 18px;
+  .title_description{
     text-align: justify;
   }
   .job_title{
     font-size: 18px;
-    line-height: 22px;
   }
-  .job_details,
-  .details{
-    align-items: flex-start;
+  .job_marker p{
+    min-width: 92px;
+    padding: 1px 10px;
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .job_details, .details{
     flex-direction: column;
   }
-  .education{
-    margin-top: 28px;
+  .company{
+    justify-content: space-between;
+  }
+  .techDescription{
+    margin-bottom: 50px;
+  }
+  .technologies_block{
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 0;
+    row-gap: 30px;
+    column-gap: 50px;
+  }
+  .projects > div > p{
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+  .all_projects{
+    justify-content: center;
+  }
+  .email{
+    margin: 100px auto 50px;
+    box-shadow: 0px 4px 6px rgb(177 174 174 / 25%);
+    padding-bottom: 50px;
+  }
+  .email p{
+    text-align: center;
+    padding: 0 15px;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 50px;
+  }
+  .email span{
+    padding: 0 15px;
+    font-size: 32px;
   }
   footer{
-    margin-top: 30px;
-    width: 80%;
+    margin: 0 auto;
+    width: 90%;
   }
-  .top_footer {
-    margin-bottom: 25px;
-  }
-  .bottom_footer{
-    width: 100%;
-    padding: 30px 0;
+  .footer_contacts{
     flex-direction: column;
     align-items: center;
-    align-content: space-between;
+  }
+  .bottom_footer{
+    flex-direction: column;
+    padding: 30px;
   }
   .nav_footer{
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 20px;
+    flex-direction: column;
+  }
+  .bottom_nav p{
+    font-size: 16px;
+    padding: 30px;
+    text-align: center;
   }
 }
 
-@media screen and (max-width: 480px){
-  header,
-  .hello_section,
-  .footer_wrapper{
-      width: 90%;
-  }
+@media screen and (max-width: 479px){
   header{
-    flex-direction: column;
-    align-items: baseline;
-    margin-bottom: 80px;
+    padding: 20px;
   }
-  .logo_img{
-    align-self: center;
+  .wrapper{
+    width: 90%;
   }
-  .nav_menu{
-    width: 100%;
-    flex-direction: column;
-  }
+  .wrapper,
   .links,
-  .social_links{
-    display: flex;
-    justify-content:space-evenly;
-    flex-wrap: wrap;
-    width: 82%;
-    padding: 8px 0;
-    align-items: center;
-  }
-  .links{
-    width: 100%;
+  .nav_menu,
+  .hello_section{
     flex-direction: column;
-  }
-  .social_links{
-    width: 100%;
   }
   .hello_section{
-    margin: 0 auto 30px;
-    flex-direction: column;
+    margin-bottom: 50px;
   }
-  .developer_name p {
-    font-size: 32px;
+  .nav_menu{
+    align-items: center;
+  }
+  .main_container{
+      margin-top: 80px;
+  }
+  .developer_name p{
+    font-size: 36px;
     line-height: 50px;
+    text-align: center;
+  }
+  .developer_photo{
+    margin-top: 50px;
+  }
+  div .gradient_background{
+    width: 280px;
+    height: 280px;
   }
   .developer_photo img{
-    margin-top: 20px;
-    width: 249px;
-    height: 249px;
+    width: 266px;
+    height: 266px;
+    top: 7px;
+    left: 7px;
   }
-  .about_me{
-    width: 90%;
-    margin-left: 20px;
-  }
-  .title{
-    font-size: 26px;
+  .block_width{
+    width: 100%;
   }
   .title h2{
-    margin-bottom: 18px;
-  }
-  .title p{
-    font-size: 16px;
-    margin-bottom: 18px;
+    margin: 38px 0;
+    font-size: 36px;
+    line-height: 42px;
   }
   .job_title{
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 16px;
   }
-  .job_details,
-  .details{
-    align-items: flex-start;
+  .job_marker p{
+    min-width: 92px;
+    padding: 1px 10px;
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .job_details, .details{
     flex-direction: column;
   }
-  .education{
-    margin-top: 28px;
+  .company{
+    justify-content: space-between;
+  }
+  .techDescription{
+    margin-bottom: 50px;
+  }
+  .technologies_block{
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 0;
+  }
+  .projects > div > p{
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+  .all_projects{
+    justify-content: center;
+  }
+  .email{
+    margin: 100px auto;
+    box-shadow: 0px 4px 6px rgb(177 174 174 / 25%);
+  }
+  .email p{
+    text-align: center;
+    padding: 0 15px;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 50px;
+  }
+  .email span{
+    padding: 0 15px;
+    font-size: 28px;
   }
   footer{
-    margin-top: 30px;
-    width: 80%;
+    margin: 0 auto;
+    width: 90%;
   }
-  .top_footer {
-    margin-bottom: 25px;
+  .footer_contacts{
+    flex-direction: column;
+    align-items: center;
   }
   .bottom_footer{
-    width: 100%;
-    padding: 30px 0;
+    flex-direction: column;
+    padding: 30px;
   }
   .nav_footer{
     width: 100%;
-    display: flex;
     flex-direction: column;
+  }
+  .bottom_nav p{
+    font-size: 16px;
+    padding: 30px;
+    text-align: center;
   }
 }
