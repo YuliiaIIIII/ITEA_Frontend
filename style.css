@@ -1,8 +1,29 @@
+:root{
+  --bg-general-color: #FFFFFF;
+  --intro-text-color: #42446E;
+  --p-color-general: #666;
+  --marker-bg-color: #D7FFE0;
+  --marker-text-color: #018C0F;
+  --text-color-additional: #000;
+  --text-color-footer: #42446E;
+  --email-color: #1E0E62;
+}
+[dark]{
+  --bg-general-color: #191919;
+  --intro-text-color: #D9D9D9;
+  --p-color-general: #CCC;
+  --marker-bg-color: #018C0F;
+  --marker-text-color: #D7FFE0;
+  --text-color-additional: #FFF;
+  --text-color-footer: #A7A7A7;
+  --email-color: #68c3ff;
+}
+
 *{
   box-sizing: border-box;
 }
 body{
-  background-color: #FFFFFF;
+  background-color: var(--bg-general-color);
   font-family: 'Poppins';
   margin: 0 auto;
 }
@@ -14,7 +35,7 @@ li{
   margin: 0;
 }
 p{
-  color: #666;
+  color: var(--p-color-general);
   font-style: normal;
   font-weight: 400;
 }
@@ -29,7 +50,7 @@ header{
   margin: 0 auto;
   padding: 41px 0;
   align-items: center;
-  background-color: #FFF;
+  background-color: var(--bg-general-color);
   box-shadow: 0px 4px 6px rgb(177 174 174 / 25%);
   top: 0;
   z-index: 10;
@@ -39,7 +60,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #FFFFFF;
+  background-color: var(--bg-general-color);
   margin: 0 auto;
 }
 .nav_menu{
@@ -61,7 +82,7 @@ header{
   width: 18%;
 }
 a{
-  color: #666;
+  color: var(--p-color-general);
   text-align: center;
   font-family: 'DM Sans';
   text-decoration: none;
@@ -75,6 +96,49 @@ a:hover{
   color: rgb(0, 132, 255);
   font-size: 22px;
 }
+.switch_button{
+  position: relative;
+  display: inline-block;
+  margin-right: 60px;
+  width: 60px;
+  height: 30px;
+  border-radius: 50px;
+}
+.switch_theme{
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+.switch_slider{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #45c6fd;
+  border-radius: 50px;
+  transition: .4s;
+}
+.switch_slider::before{
+  content: "";
+  position: absolute;
+  left: 3px;
+  bottom: 3px;
+ 
+  height: 24px;
+  width: 24px;
+  background-color: var(--bg-general-color);
+  border-radius: 50%;
+}
+.switch_theme:checked + .switch_slider{
+  background-color: var(--text-color-footer);
+}
+.switch_theme:checked + .switch_slider::before{
+  transform: translateX(30px);
+
+}
+
+
 .main_container{
   margin-top: 320px;
 }
@@ -85,7 +149,7 @@ a:hover{
   align-items: center;
 }
 .developer_name p {
-  color: #42446E;
+  color: var(--intro-text-color);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-size: 58px;
   font-weight: 700;
@@ -122,7 +186,7 @@ div .gradient_background{
 .title h2{
   margin: 38px 0;
   font-size: 42px;
-  color: #42446E;
+  color: var(--text-color-footer);
   font-weight: 700;
   line-height: 52px;
   letter-spacing: -0.4px;
@@ -151,8 +215,8 @@ div .gradient_background{
   min-width: 92px;
   padding: 1px 22px;
   border-radius: 100px;
-  background-color:  #D7FFE0;
-  color: #018C0F;
+  background-color:  var(--marker-bg-color);
+  color: var(--marker-text-color);
   text-align: center;
   font-size: 9px;
   font-weight: 600;
@@ -269,14 +333,14 @@ div .gradient_background{
 .project_card{
   width: 375px;
   border-radius: 20px;
-  background: #FFF;
+  background: var(--bg-general-color);
   box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.20);
 }
 .project_img{
   border-radius: 20px 20px 0px 0px;
 }
 h3{
-  color: #000;
+  color: var(--text-color-additional);
   text-align: center;
   font-size: 28px;
   font-weight: 500;
@@ -291,7 +355,7 @@ h3{
   text-align: left;
 }
 div .tech_style{
-  color: #42446E;
+  color: var(--text-color-footer);
   line-height: 26px;
   font-size: 16px;
   font-weight: 400;
@@ -308,11 +372,14 @@ div .tech_style{
 .list_links ul{
   display: flex;
   justify-content: space-between;
-  color: #000;
+  color: var(--text-color-additional);
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
   text-decoration-line: underline;
+}
+.list_links a{
+  color: var(--text-color-additional);
 }
 li{
   list-style-type: none;
@@ -349,7 +416,7 @@ li{
   margin: 200px auto;
 }
 .email p{
-  color: #1E0E62;
+  color: var(--email-color);
   text-align: center;
   font-family: 'DM Sans';
   font-size: 58px;
@@ -367,7 +434,7 @@ footer{
 }
 .links div p,
 .nav_footer a{
-  color: #42446E;
+  color: var(--text-color-footer);
   font-size: 18px;
 }
 .top_footer{
@@ -433,6 +500,9 @@ footer{
   }
   .project_card{
     width: 280px;
+  }
+  .project_img{
+    border-radius: 20px;
   }
   .project_img img{
     width: 280px;

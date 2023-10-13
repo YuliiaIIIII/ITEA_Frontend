@@ -12,6 +12,15 @@
   <title>Developer portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
+<script>
+  const changeTheme = (isChecked) => {
+    if (isChecked) {
+      document.body.setAttribute('dark', '');
+    }else{
+      document.body.removeAttribute('dark')
+    }
+  }
+</script>
 
 <body>
   <header>
@@ -62,6 +71,12 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="switch">
+      <label class="switch_button">
+        <input type="checkbox" class="switch_theme" onchange="changeTheme(this.checked)">
+        <span class="switch_slider"></span>
+      </label>
     </div>
   </header>
 
