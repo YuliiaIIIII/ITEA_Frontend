@@ -8,6 +8,8 @@
   --text-color-footer: #42446E;
   --email-color: #1E0E62;
   --project-card-bg: #FFFFFF; 
+  --link-chain-img: url(./images/link_chain.svg);
+  --git-chain-img: url(./images/icons_github_fill.svg);
   --project-img-bg1: url(./images/Projects/project_top1.svg);
   --project-img-bg2: url(./images/Projects/project_top2.svg);
   --project-img-bg3: url(./images/Projects/project_top3.svg);
@@ -25,6 +27,8 @@
   --text-color-footer: #A7A7A7;
   --email-color: #68c3ff;
   --project-card-bg: #363636;
+  --link-chain-img: url(./images/Projects/dark_mode/dark_link_chain.svg);
+  --git-chain-img: url(./images/Projects/dark_mode/dark_github_chain.svg);
   --project-img-bg1: url(./images/Projects/project_top3.svg);
   --project-img-bg3: url(./images/Projects/dark_mode/dark_project_img3.svg);
   --project-img-bg4: url(./images/Projects/dark_mode/dark_project_img4.svg);
@@ -425,7 +429,7 @@ li{
   display: block;
   width: 20px;
   height: 20px;
-  background-image: url('./images/link_chain.svg');
+  background-image: var(--link-chain-img);
   position: absolute;
   background-position: center;
   background-repeat: no-repeat;
@@ -437,7 +441,7 @@ li{
   display: block;
   width: 20px;
   height: 20px;
-  background-image: url('./images/icons_github_fill.svg');
+  background-image: var(--git-chain-img);
   position: absolute;
   background-position: center;
   background-repeat: no-repeat;
