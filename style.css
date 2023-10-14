@@ -743,7 +743,10 @@ footer{
 }
 
 @media screen and (max-width: 479px){
-  .wrapper{
+  .wrapper,
+  .links,
+  .nav_menu,
+  .hello_section{
     flex-direction: column;
   }
   /* header{
@@ -752,12 +755,7 @@ footer{
   .wrapper{
     width: 90%;
   }
-  .wrapper,
-  .links,
-  .nav_menu,
-  .hello_section{
-    flex-direction: column;
-  }
+
   .hello_section{
     margin-bottom: 50px;
   }
