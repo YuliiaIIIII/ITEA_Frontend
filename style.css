@@ -650,18 +650,18 @@ footer{
     margin-top: 270px;
   }
   .developer_name p{
-    font-size: 32px;
+    font-size: 30px;
     line-height: 40px;
     text-align: justify;
   }
 
   div .gradient_background{
-    width: 240px;
-    height: 240px;
+    width: 210px;
+    height: 210px;
   }
   .developer_photo img{
-    width: 222px;
-    height: 222px;
+    width: 192px;
+    height: 192px;
     top: 9px;
     left: 9px;
   }
@@ -674,7 +674,7 @@ footer{
   .job_title{
     font-size: 18px;
   }
-  .job_marker p{
+  .job_marker{
     min-width: 92px;
     padding: 1px 10px;
     font-size: 10px;
@@ -743,27 +743,29 @@ footer{
 }
 
 @media screen and (max-width: 479px){
+  header,
   .wrapper,
   .links,
   .nav_menu,
   .hello_section{
     flex-direction: column;
   }
-  /* header{
-    padding: 20px;
+  header {
+    display: flex;
+    position: absolute;
+    padding-bottom: 20px;
   }
   .wrapper{
-    width: 90%;
+    margin-top: 20px;
   }
-
-  .hello_section{
-    margin-bottom: 50px;
-  }
-  .nav_menu{
-    align-items: center;
+  .switch_button {
+    margin-right: 0;
   }
   .main_container{
-      margin-top: 80px;
+    margin-top: 380px;
+  }
+  .hello_section{
+    row-gap: 20px;
   }
   .developer_name p{
     font-size: 36px;
@@ -783,9 +785,6 @@ footer{
     top: 7px;
     left: 7px;
   }
-  .block_width{
-    width: 100%;
-  }
   .title h2{
     margin: 38px 0;
     font-size: 36px;
@@ -794,67 +793,15 @@ footer{
   .job_title{
     font-size: 16px;
   }
-  .job_marker p{
-    min-width: 92px;
-    padding: 1px 10px;
-    font-size: 10px;
-    font-weight: 500;
+  .job_marker{
+    min-width: 70px;
+    height: 30px;
   }
-  .job_details, .details{
-    flex-direction: column;
+  .block_width{
+    text-align: left;
   }
-  .company{
-    justify-content: space-between;
-  }
-  .techDescription{
-    margin-bottom: 50px;
-  }
-  .technologies_block{
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-bottom: 0;
-  }
-  .projects > div > p{
-    font-size: 20px;
-    margin-bottom: 50px;
-  }
-  .all_projects{
-    justify-content: center;
-  }
-  .email{
-    margin: 100px auto;
-    box-shadow: 0px 4px 6px rgb(177 174 174 / 25%);
-  }
-  .email p{
-    text-align: center;
-    padding: 0 15px;
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 50px;
-  }
+  .email p,
   .email span{
-    padding: 0 15px;
-    font-size: 28px;
+    font-size: 24px;
   }
-  footer{
-    margin: 0 auto;
-    width: 90%;
-  }
-  .footer_contacts{
-    flex-direction: column;
-    align-items: center;
-  }
-  .bottom_footer{
-    flex-direction: column;
-    padding: 30px;
-  }
-  .nav_footer{
-    width: 100%;
-    flex-direction: column;
-  }
-  .bottom_nav p{
-    font-size: 16px;
-    padding: 30px;
-    text-align: center;
-  } */
 }
