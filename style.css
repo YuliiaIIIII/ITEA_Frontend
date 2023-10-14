@@ -7,6 +7,7 @@
   --text-color-additional: #000;
   --text-color-footer: #42446E;
   --email-color: #1E0E62;
+  --project-card-bg: #FFFFFF; 
   --project-img-bg1: url(./images/Projects/project_top1.svg);
   --project-img-bg2: url(./images/Projects/project_top2.svg);
   --project-img-bg3: url(./images/Projects/project_top3.svg);
@@ -23,6 +24,7 @@
   --text-color-additional: #FFF;
   --text-color-footer: #A7A7A7;
   --email-color: #68c3ff;
+  --project-card-bg: #363636;
   --project-img-bg1: url(./images/Projects/project_top3.svg);
   --project-img-bg3: url(./images/Projects/dark_mode/dark_project_img3.svg);
   --project-img-bg4: url(./images/Projects/dark_mode/dark_project_img4.svg);
@@ -338,7 +340,7 @@ div .gradient_background{
   width: 375px;
   height: 567px;
   border-radius: 20px;
-  background: var(--bg-general-color);
+  background: var(--project-card-bg);
   box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.20);
   display: flex;
   justify-content: center;
