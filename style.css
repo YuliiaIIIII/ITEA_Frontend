@@ -668,27 +668,6 @@ footer{
   .hello_section{
     margin-bottom: 60px;
   }
-  /* .title h2{
-    margin: 0 0;
-    font-size: 38px;
-    line-height: 44px;
-  } */
-  /* .project_card{
-    width: 345px;
-  }
-  .project_img_bg{
-    width: 345px;
-    background-size: cover;
-  } */
-  /* 
-
-
-
-  
-  .block_width{
-    width: 100%;
-  }
-
   .title_description{
     text-align: justify;
   }
@@ -760,10 +739,13 @@ footer{
     font-size: 16px;
     padding: 30px;
     text-align: center;
-  } */
+  }
 }
 
 @media screen and (max-width: 479px){
+  .wrapper{
+    flex-direction: column;
+  }
   /* header{
     padding: 20px;
   }
