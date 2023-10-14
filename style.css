@@ -217,7 +217,7 @@ div .gradient_background{
   line-height: 28px;
   letter-spacing: 1px;
 }
-.job_marker p{
+.job_marker{
   min-width: 92px;
   padding: 1px 22px;
   border-radius: 100px;
@@ -346,35 +346,28 @@ div .gradient_background{
 .card_content{
   text-align: center;
 }
-.project_img1{
-  background-image: var(--project-img-bg1);
+.project_img_bg{
   width: 375px;
   height: 260px;
+  background-repeat: no-repeat;
+}
+.project_img1{
+  background-image: var(--project-img-bg1);
 }
 .project_img2{
   background-image: var(--project-img-bg2);
-  width: 375px;
-  height: 260px;
 }
 .project_img3{
   background-image: var(--project-img-bg3);
-  width: 375px;
-  height: 260px;
 }
 .project_img4{
   background-image: var(--project-img-bg4);
-  width: 375px;
-  height: 260px;
 }
 .project_img5{
   background-image: var(--project-img-bg5);
-  width: 375px;
-  height: 260px;
 }
 .project_img6{
   background-image: var(--project-img-bg6);
-  width: 375px;
-  height: 260px;
 }
 h3{
   color: var(--text-color-additional);
@@ -500,25 +493,71 @@ footer{
   .logo_img{
     width: 30%;
   }
+  .title_description{
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .block_width{
+    width: 100%;
+  }
+  .job_title{
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 1px;
+  }
+  .title {
+    text-align: center;
+  }
+  .company p{
+    font-size: 20px;
+  }
+  .job_marker{
+    min-width: 140px;
+  }
+  .job_marker,
+  .duration p{
+    font-size: 16px;
+  }
+  .duration::before{
+    top: 7px;
+  }
+  .project_card{
+    width: 385px;
+  }
+  .project_img_bg{
+    width: 385px;
+    background-size: cover;
+  }
 }
 
 @media screen and (max-width: 1399px){
-
+  header{
+    position: fixed;
+  }
+  .title h2{
+    margin: 30px 0;
+  }
+  .title_description{
+    font-size: 20px;
+  }
+.techDescription{
+  margin-bottom: 80px;
+  }
+  .footer_contacts{
+    justify-content: center;
+  }
+  .footer_contacts{
+    justify-content: space-between;
+  }
 }
 
 @media screen and (max-width: 1199px){
-  header{
-    padding: 20px 0;
-  }
-  .main_container {
+  .main_container{
     margin-top: 200px;
   }
   .developer_name p{
     font-size: 52px;
     line-height: 60px;
-  }
-  .developer_photo{
-    margin-top: 0;
   }
   div .gradient_background{
     width: 240px;
@@ -533,6 +572,9 @@ footer{
   .hello_section{
     margin-bottom: 150px;
   }
+  .title{
+    text-align: center;
+  }
   .block_width{
     width: 100%;
     text-align: justify;
@@ -540,36 +582,22 @@ footer{
   .techDescription{
     margin-bottom: 70px;
   }
-  .project_card{
-    width: 280px;
+  .tech_icon{
+    width: 25%;
   }
-  .project_img{
-    border-radius: 20px;
+  .technologies_block{
+    flex-wrap: wrap;
+    margin-bottom: 0;
   }
-  .project_img img{
-    width: 280px;
-  }
-  h3{
-    font-size: 24px;
-    padding: 12px 14px;
-  }
-  .portfolio_description p{
-    font-size: 16px;
-    text-align: justify;
-  }
-  .list_links{
-    padding: 10px;
-  }
-  li a{
-      font-size: 16px;
-      font-weight: 500;
+  .tech_icon{
+    width: 30%;
+    text-align: center;
   }
   .email{
-    margin: 100px auto;
+    font-size: 20px;
   }
-  footer{
-    margin: 100px auto 0;
-    width: 90%;
+  .email p{
+    font-size: 48px;
   }
   .bottom_footer{
     flex-direction: column;
@@ -577,105 +605,90 @@ footer{
     row-gap: 50px;
   }
   .footer_contacts{
-    justify-content: center;
+    justify-content: space-around;
   }
 } 
 
 @media screen and (max-width: 991px){
   header{
-    padding: 20px 0;
+    position: absolute;
   }
-  .main_container {
+  .main_container{
     margin-top: 220px;
   }
   .developer_name p{
     font-size: 48px;
-    line-height: 60px;
   }
-  .developer_photo{
-    margin-top: 0;
+  .footer_contacts{
+    justify-content: space-between;
   }
+  .nav_menu{
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 767px){
+  header{
+    padding: 0;
+  }
+  .nav_menu{
+    flex-direction: column;
+    align-items: center;
+  }
+  .links{
+    padding: 10px 0;
+    flex-direction: column;
+  }
+  .logo_img{
+    text-align: center;
+  }
+  .wrapper,
+  .nav_menu{
+    width: 65%;
+  }
+  .main_container{
+    margin-top: 270px;
+  }
+  .developer_name p{
+    font-size: 32px;
+    line-height: 40px;
+    text-align: justify;
+  }
+
   div .gradient_background{
     width: 240px;
     height: 240px;
   }
   .developer_photo img{
-    width: 228px;
-    height: 228px;
-    top: 6px;
-    left: 6px;
-  }
-  .hello_section{
-    margin-bottom: 150px;
-  }
-  .block_width{
-    width: 100%;
-    text-align: justify;
-  }
-  .techDescription{
-    margin-bottom: 70px;
-  }
-  .projects > div > p {
-    margin-bottom: 70px;
-  }
-  .email{
-    margin: 100px auto;
-  }
-  footer{
-    margin: 100px auto 0;
-    width: 90%;
-  }
-  .bottom_footer{
-    flex-direction: column;
-    align-items: center
-  }
-  .footer_contacts{
-    justify-content: center;
-  }
-}
-
-@media screen and (max-width: 767px){
-  .wrapper,
-  .links,
-  .nav_menu,
-  .hello_section{
-    flex-direction: column;
-  }
-  .nav_menu{
-    align-items: center;
-  }
-  .hello_section{
-    margin-bottom: 50px;
-  }
-  .main_container{
-    margin-top: 80px;
-  }
-  .developer_name p{
-    font-size: 42px;
-    line-height: 50px;
-    text-align: justify;
-  }
-  .developer_photo{
-    margin-top: 50px;
-  }
-  div .gradient_background{
-    width: 290px;
-    height: 290px;
-  }
-  .developer_photo img{
-    width: 272px;
-    height: 272px;
+    width: 222px;
+    height: 222px;
     top: 9px;
     left: 9px;
   }
+  .hello_section{
+    margin-bottom: 60px;
+  }
+  /* .title h2{
+    margin: 0 0;
+    font-size: 38px;
+    line-height: 44px;
+  } */
+  /* .project_card{
+    width: 345px;
+  }
+  .project_img_bg{
+    width: 345px;
+    background-size: cover;
+  } */
+  /* 
+
+
+
+  
   .block_width{
     width: 100%;
   }
-  .title h2{
-    margin: 40px 0;
-    font-size: 38px;
-    line-height: 44px;
-  }
+
   .title_description{
     text-align: justify;
   }
@@ -747,11 +760,11 @@ footer{
     font-size: 16px;
     padding: 30px;
     text-align: center;
-  }
+  } */
 }
 
 @media screen and (max-width: 479px){
-  header{
+  /* header{
     padding: 20px;
   }
   .wrapper{
@@ -863,5 +876,5 @@ footer{
     font-size: 16px;
     padding: 30px;
     text-align: center;
-  }
+  } */
 }
